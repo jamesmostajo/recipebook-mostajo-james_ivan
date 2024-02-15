@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Recipe 2</title>
+    <title>Recipe 1</title>
   </head>
   <body>
     <h1>Recipe Book</h1>
@@ -9,7 +9,7 @@
     <p>Ingredients:</p>
     <ul>
       {% for ingredient in ingredients %}
-      <li>{{ ingredient.name }}, {{ ingredient.quantity }}</li>
+      <li>{{ ingredient.quantity }} {{ ingredient.name }}</li>
       {% endfor %}
     </ul>
   </body>

@@ -10,19 +10,19 @@ def recipes_list(request):
                 "ingredients": [
                     {
                         "name": "tomato",
-                        "quantity": "3pcs"
+                        "quantity": "3 pcs"
                     },
                     {
                         "name": "onion",
-                        "quantity": "1pc"
+                        "quantity": "1 pc"
                     },
                     {
                         "name": "pork",
-                        "quantity": "1kg"
+                        "quantity": "1 kg"
                     },
                     {
                         "name": "water",
-                        "quantity": "1L"
+                        "quantity": "1 L"
                     },
                     {
                         "name": "sinigang mix",
@@ -40,11 +40,11 @@ def recipes_list(request):
                     },
                     {
                         "name": "onion",
-                        "quantity": "1pc"
+                        "quantity": "1 pc"
                     },
                     {
                         "name": "vinegar",
-                        "quantity": "1/2cup"
+                        "quantity": "1/2 cup"
                     },
                     {
                         "name": "water",
@@ -75,19 +75,19 @@ def recipe_1(request):
         "ingredients": [
             {
                 "name": "tomato",
-                "quantity": "3pcs"
+                "quantity": "3 pcs"
             },
             {
                 "name": "onion",
-                "quantity": "1pc"
+                "quantity": "1 pc"
             },
             {
                 "name": "pork",
-                "quantity": "1kg"
+                "quantity": "1 kg"
             },
             {
                 "name": "water",
-                "quantity": "1L"
+                "quantity": "1 L"
             },
             {
                 "name": "sinigang mix",
@@ -108,11 +108,11 @@ def recipe_2(request):
             },
             {
                 "name": "onion",
-                "quantity": "1pc"
+                "quantity": "1 pc"
             },
             {
                 "name": "vinegar",
-                "quantity": "1/2cup"
+                "quantity": "1/2 cup"
             },
             {
                 "name": "water",
