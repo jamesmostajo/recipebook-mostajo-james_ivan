@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Recipe Book</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a
+          href="{% url 'ledger:recipes_list' %}"
+          style="color: black; text-decoration: none"
+          >Recipe Book</a
+        >
+      </h1>
+      {% if request.user.is_authenticated %}
+      <h3>Welcome {{request.user.username}}</h3>
+      <form action="{% url 'logout' %}" method="">
+        {% csrf_token %}
+        <button type="submit">LOG OUT</button>
+      </form>
+      {% else %}
+      <a href="{% url  'login' %}">LOGIN</a>
+      {% endif %}
+    </header>
+    {% block content %}{% endblock %}
+  </body>
+</html>

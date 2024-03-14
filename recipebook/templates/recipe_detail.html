@@ -1,0 +1,17 @@
+{% extends "base.html" %} 
+{% block content %}
+<h2>{{ name }}  by <i>{{ author }} </i></h2>
+
+
+<p>
+  <b> Created on : </b> {{ created_on }} <br>
+  <b> Last updated on : </b> {{ updated_on }}
+</p>
+
+<p>Ingredients:</p>
+<ul>
+  {% for ingredient in ingredients %}
+  <li>{{ ingredient.quantity }} of {{ingredient.ingredient.name}}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

@@ -15,8 +15,9 @@ def recipe(request, pk):
     recipe = Recipe.objects.get(pk = pk)
     ctx = {
         "name": recipe.name,
+        "author": recipe.author,
         "ingredients": recipe.ingredients.all(),
         "created_on" : recipe.created_on,
         "updated_on" : recipe.updated_on
     }
-    return render(request, "recipe.html", ctx)
+    return render(request, "recipe_detail.html", ctx)
