@@ -13,6 +13,8 @@ def recipe(request, pk):
     recipe = Recipe.objects.get(pk = pk)
     ctx = {
         "name": recipe.name,
-        "ingredients": recipe.ingredients.all()
+        "ingredients": recipe.ingredients.all(),
+        "created_on" : recipe.created_on,
+        "updated_on" : recipe.updated_on
     }
     return render(request, "recipe.html", ctx)

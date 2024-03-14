@@ -30,6 +30,9 @@ class Recipe(models.Model):
         related_name="users"
     )
 
+    created_on = models.DateTimeField(auto_now_add=True, null=True)
+    updated_on = models.DateTimeField(auto_now=True, null=True)
+    
     def __str__(self):
         return self.name
 
