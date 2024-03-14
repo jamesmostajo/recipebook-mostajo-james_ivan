@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 from .models import Recipe
@@ -9,6 +10,7 @@ def recipes_list(request):
     ctx = {'recipe_list': recipes}
     return render(request, "recipes_list.html", ctx)
 
+@login_required
 def recipe(request, pk):
     recipe = Recipe.objects.get(pk = pk)
     ctx = {
